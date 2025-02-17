@@ -1,5 +1,38 @@
 # Guia de Uso - Aplicativo Flet
 
+### Observação:
+## 🔗 Integração com o Backend Django  
+
+Este aplicativo **Flet** foi desenvolvido para consumir a API de um backend construído com **Django e Django Ninja**. Ele fornece uma interface gráfica interativa para gerenciar alunos e aulas, utilizando os endpoints do backend.  
+
+#### Link da API
+````sh
+https://github.com/Djohnn/Rest-Api-Treinos
+````
+
+### Funcionalidades Integradas  
+
+O aplicativo se comunica com a API para:  
+- Criar novos alunos  
+- Listar todos os alunos cadastrados  
+- Registrar aulas realizadas  
+- Exibir o progresso dos alunos
+- Atualizar dados do aluno  
+
+### Configuração da Integração  
+
+1. **Iniciar o backend Django**  
+   Antes de rodar o aplicativo Flet, certifique-se de que o servidor Django está em execução:  
+   ```sh
+   python manage.py runserver
+    ```
+2. **Configurar o endereço da API**
+No código do aplicativo, a variável API_BASE_URL deve apontar para o backend:
+```sh
+API_BASE_URL = "http://localhost:8000/api/treino"
+
+```
+
 ## Instalação de Dependências e criação do ambiente virtual
 
 Antes de iniciar o desenvolvimento do aplicativo crie o ambiente virtual,
